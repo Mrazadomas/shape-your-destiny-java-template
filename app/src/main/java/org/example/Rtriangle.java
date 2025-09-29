@@ -1,0 +1,22 @@
+package org.example;
+import java.lang.Math;
+
+public class Rtriangle extends Shape {
+    
+    private double l;
+    private double w;
+    
+    public Rtriangle(double l, double w) {
+        this.l = l;
+        this.w = w;
+    }
+
+    public double getArea() {
+        return (l * w) / 2;
+    }
+
+    public double getPerimeter() {
+        return l + w + (Math.sqrt(Math.pow(l, 2) + Math.pow(w, 2)));
+    }
+}
+
