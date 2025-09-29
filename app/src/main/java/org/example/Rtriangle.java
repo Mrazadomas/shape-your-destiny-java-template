@@ -5,6 +5,11 @@ public class Rtriangle extends Shape {
     
     private double l;
     private double w;
+
+    public Rtriangle() {
+        l = 0;
+        w = 0;
+    }
     
     public Rtriangle(double l, double w) {
         this.l = l;
