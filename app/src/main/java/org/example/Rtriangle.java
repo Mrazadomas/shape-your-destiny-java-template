@@ -1,7 +1,7 @@
 package org.example;
 import java.lang.Math;
 
-public class Rtriangle extends Shape {
+public class Rtriangle extends Shape implements Polygon {
     
     private double l;
     private double w;
@@ -22,6 +22,10 @@ public class Rtriangle extends Shape {
 
     public double getPerimeter() {
         return l + w + (Math.sqrt(Math.pow(l, 2) + Math.pow(w, 2)));
+    }
+
+    public int numberOfSides() {
+        return 3;
     }
 }
 

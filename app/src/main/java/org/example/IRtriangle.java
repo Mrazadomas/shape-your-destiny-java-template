@@ -16,4 +16,8 @@ public class IRtriangle extends Rtriangle {
     public double getPerimeter() {
         return s + s + (Math.sqrt(Math.pow(s, 2) + Math.pow(s, 2)));
     }
+
+    public int numberOfSides() {
+        return 3;
+    }
 }

@@ -27,5 +27,10 @@ class AppTest {
     IRtriangle it = new IRtriangle(2);
     assertEquals(it.getArea(), 2);
     assertEquals(it.getPerimeter(), 2 + 2 + Math.sqrt(Math.pow(2,2) + Math.pow(2,2)));
+
+    assertEquals(r.numberOfSides(), 4);
+    assertEquals(t.numberOfSides(), 3);
+    assertEquals(it.numberOfSides(), 3);
+    assertEquals(s.numberOfSides(), 4);
   }
 }

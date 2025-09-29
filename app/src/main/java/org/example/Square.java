@@ -1,6 +1,6 @@
 package org.example;
 
-public class Square extends Rectangle{
+public class Square extends Rectangle {
     
     private double s;
 
@@ -14,5 +14,9 @@ public class Square extends Rectangle{
     
     public double getPerimeter() {
         return 4 * s;
+    }
+
+    public int numberOfSides() {
+        return 4;
     }
 }
